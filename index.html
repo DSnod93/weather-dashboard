@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" />
+</head>
+
+<body>
+    <header class="bg-dark">
+        <h3 class="text-light center">
+            Forecast Dashboard
+        </h3>
+    </header>
+
+
+
+    <div class="row">
+        <div class="col-4">
+            <div class="card " style="width: 18rem;">
+                <div class="card-header">
+                    <p style="font-size:large; font-weight: 100;">Search for a city:</p>
+                    <input class="search" id="search-bar" placeholder="City"></input>
+                    <button id="search-btn" type="submit" class=" col-2 btn btn-primary">
+                        <span class="magnifying-glass"></span>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <ul id="history" class="list-group list-group-flush">
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="card">
+                <div id="info" class="card-body">
+
+                    <h1 id="city-name"> Search for a city!</h1>
+                    <div id="icon"><img id="wicon" src=""></div>
+
+                    <h2 id="date"> </h2>
+
+
+                </div>
+                <div class="card text-light">
+                    <div id="forecast" class=" card-body">
+                        <h2 class="text-dark ">5-Day Forecast: </h2>
+                        <div class="container">
+                            <div class="row">
+                                <div id="one" class=" bg-primary mr-3 col-sm">
+                                    <p id="dateOne"> </p>
+                                    <div id="icon-one"><img id="icon1" src=""></div>
+
+                                </div>
+                                <div id="two" class=" mr-3 bg-primary col-sm">
+                                    <p id="date2"> </p>
+                                    <div id="icon-two"><img id="icon2" src=""></div>
+
+                                </div>
+                                <div id="three" class="col-sm mr-3 bg-primary ">
+                                    <p id="date3"> </p>
+                                    <div id="icon-three"><img id="icon3" src=""></div>
+
+                                </div>
+                                <div id="four" class="col-sm mr-3 bg-primary ">
+                                    <p id="date4"> </p>
+                                    <div id="icon-four"><img id="icon4" src=""></div>
+
+                                </div>
+                                <div id="five" class="col-sm  bg-primary">
+                                    <p style="font-size: 17px;" id="date5"> </p>
+                                    <div id="icon-five"><img id="icon5" src=""></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
