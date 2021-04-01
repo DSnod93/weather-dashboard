@@ -2,6 +2,6 @@
 Weather application that displays 5 day forecast for your city of choice
 
 
- ![Alt text](assets/images/dashboard.jpg "weather app")
+ ![](./assets/images/dashboard.jpg)
 
  https://dsnod93.github.io/weather-dashboard/
